@@ -1,3 +1,26 @@
+### `Data Needed
+
+`First Name`
+`Last Name`
+`Address`
+`City`
+`State`
+`Zip`
+`Phone Number`
+`Email`
+`Age`
+`Country of Origin`
+`Languages Spoken`
+`How Long In USA`
+`Employed` (Radio)
+`Your Job`
+`Returning Student` (Radio)
+`Educational Level`
+`Childcare Needed?`(Radio)
+`How Did You Hear About The Program`
+`Emergency Contact Name`
+`Emergency Contact Phone`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
