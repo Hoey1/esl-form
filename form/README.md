@@ -1,25 +1,25 @@
 ### `Data Needed
 
-`First Name`
-`Last Name`
-`Address`
-`City`
-`State`
-`Zip`
-`Phone Number`
-`Email`
-`Age`
-`Country of Origin`
-`Languages Spoken`
-`How Long In USA`
-`Employed` (Radio)
-`Your Job`
-`Returning Student` (Radio)
-`Educational Level`
-`Childcare Needed?`(Radio)
-`How Did You Hear About The Program`
-`Emergency Contact Name`
-`Emergency Contact Phone`
+`First Name` <br />
+`Last Name` <br />
+`Address` <br />
+`City` <br />
+`State` <br />
+`Zip` <br />
+`Phone Number` <br />
+`Email` <br />
+`Age` <br />
+`Country of Origin` <br />
+`Languages Spoken` <br />
+`How Long In USA` <br />
+`Employed` (Radio) <br />
+`Your Job` <br />
+`Returning Student` (Radio) <br />
+`Educational Level` <br />
+`Childcare Needed?`(Radio) <br />
+`How Did You Hear About The Program` <br />
+`Emergency Contact Name` <br />
+`Emergency Contact Phone` <br />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
