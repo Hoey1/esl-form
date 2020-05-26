@@ -54,6 +54,7 @@ export class FormPersonalDetails extends Component {
             // onChange={this.props.handleChange}
             defaultValue={values.occupation}
           />
+          <br />
           <TextField
             hintText="Are You A Returning Student?"
             floatingLabelText="Returning Student"
@@ -73,6 +74,14 @@ export class FormPersonalDetails extends Component {
           <TextField
             hintText="Will You Need Childcare?"
             floatingLabelText="Childcare Needed"
+            onChange={handleChange("childCare")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.childCare}
+          />
+          <br />
+          <TextField
+            hintText="If Yes, How Many Children?"
+            floatingLabelText="Number of Kids"
             onChange={handleChange("childCare")}
             // onChange={this.props.handleChange}
             defaultValue={values.childCare}
