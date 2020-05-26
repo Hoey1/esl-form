@@ -1,16 +1,32 @@
 import React, { Component } from "react";
 import FormUserDetails from "./FormUserDetails";
 import FormPersonalDetails from "./FormPersonalDetails";
+import Confirm from "./Confirm";
 
 export class UserForm extends Component {
   state = {
     step: 1,
     firstName: "",
     lastName: "",
-    email: "",
-    occupation: "",
+    address: "",
     city: "",
-    bio: "",
+    state: "",
+    zip: "",
+    phone: "",
+    email: "",
+    age: "",
+    //
+    country: "",
+    languages: "",
+    howLong: "",
+    employed: "",
+    occupation: "",
+    returnStudent: "",
+    eduLevel: "",
+    childCare: "",
+    how: "",
+    emerName: "",
+    emerPhone: "",
   };
 
   // Proceed to next step
@@ -36,8 +52,50 @@ export class UserForm extends Component {
 
   render() {
     const { step } = this.state;
-    const { firstName, lastName, email, occupation, city, bio } = this.state;
-    const values = { firstName, lastName, email, occupation, city, bio };
+    const {
+      firstName,
+      lastName,
+      address,
+      city,
+      state,
+      zip,
+      phone,
+      email,
+      age,
+      country,
+      language,
+      howLong,
+      employed,
+      occupation,
+      returnStudent,
+      eduLevel,
+      childCare,
+      how,
+      emerName,
+      emerPhone,
+    } = this.state;
+    const values = {
+      firstName,
+      lastName,
+      address,
+      city,
+      state,
+      zip,
+      phone,
+      email,
+      age,
+      country,
+      language,
+      howLong,
+      employed,
+      occupation,
+      returnStudent,
+      eduLevel,
+      childCare,
+      how,
+      emerName,
+      emerPhone,
+    };
 
     switch (step) {
       case 1:
@@ -58,7 +116,13 @@ export class UserForm extends Component {
           />
         );
       case 3:
-        return <h1>Confrim</h1>;
+        return (
+          <Confirm
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            values={values}
+          />
+        );
       case 4:
         return <h1>Success</h1>;
     }
