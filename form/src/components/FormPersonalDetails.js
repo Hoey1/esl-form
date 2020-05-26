@@ -21,8 +21,32 @@ export class FormPersonalDetails extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Enter Personal Details" />
+          <AppBar title="Enter Additional Details" />
           {/* <SchoolIcon color="primary" /> */}
+          <TextField
+            hintText="Enter Your Home Country"
+            floatingLabelText="Country"
+            onChange={handleChange("country")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.country}
+          />
+          <br />
+          <TextField
+            hintText="How Many Languages Do You Speak"
+            floatingLabelText="Languages"
+            onChange={handleChange("languages")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.languages}
+          />
+          <br />
+          <TextField
+            hintText="How Long Have You Been In The USA?"
+            floatingLabelText="Time In United States"
+            onChange={handleChange("howLong")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.howLong}
+          />
+          <br />
           <TextField
             hintText="Enter Your Occupation"
             floatingLabelText="Occupation"
@@ -30,21 +54,52 @@ export class FormPersonalDetails extends Component {
             // onChange={this.props.handleChange}
             defaultValue={values.occupation}
           />
-          <br />
           <TextField
-            hintText="Enter Your City"
-            floatingLabelText="City"
-            onChange={handleChange("city")}
+            hintText="Are You A Returning Student?"
+            floatingLabelText="Returning Student"
+            onChange={handleChange("returnStudent")}
             // onChange={this.props.handleChange}
-            defaultValue={values.city}
+            defaultValue={values.returnStudent}
           />
           <br />
           <TextField
-            hintText="Enter Your Bio"
-            floatingLabelText="Bio"
-            onChange={handleChange("bio")}
+            hintText="Highest Grade Completed"
+            floatingLabelText="Educational Level"
+            onChange={handleChange("eduLevel")}
             // onChange={this.props.handleChange}
-            defaultValue={values.bio}
+            defaultValue={values.eduLevel}
+          />
+          <br />
+          <TextField
+            hintText="Will You Need Childcare?"
+            floatingLabelText="Childcare Needed"
+            onChange={handleChange("childCare")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.childCare}
+          />
+          <br />
+          <TextField
+            hintText="How Did You Hear About Our Program?"
+            floatingLabelText="Tell Us How You Discovered Us"
+            onChange={handleChange("how")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.how}
+          />
+          <br />
+          <TextField
+            hintText="Emergency Contact - Name"
+            floatingLabelText="Emergency Contact - Name"
+            onChange={handleChange("emerName")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.emerName}
+          />
+          <br />
+          <TextField
+            hintText="Emergency Contact - Phone"
+            floatingLabelText="Emergency Contact - Phone"
+            onChange={handleChange("emerPhone")}
+            // onChange={this.props.handleChange}
+            defaultValue={values.emerPhone}
           />
           <br />
           <RaisedButton
